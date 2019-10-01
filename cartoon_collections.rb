@@ -15,11 +15,10 @@ s.map do |x|
   (x.length>4)? response=true:response
 end
 p response
-
-
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(s)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  puts (s & cheese_types).map{|x| x}.first
 end
