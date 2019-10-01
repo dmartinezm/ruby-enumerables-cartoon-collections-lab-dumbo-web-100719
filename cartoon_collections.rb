@@ -10,10 +10,12 @@ def summon_captain_planet(planets)
 end
 
 def long_planeteer_calls(s)
-response=false
+rresponse=false
 s.map do |x|
-(x.length>4)? true: false
+  (x.length>4)? response=true:response
 end
+p response
+
 
 end
 
