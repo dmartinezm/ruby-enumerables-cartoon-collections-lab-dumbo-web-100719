@@ -12,7 +12,7 @@ end
 def long_planeteer_calls(s)
 response=false
 s.map do |x|
-  (x.length>4)? return true:false
+  (x.length>4)? response=true:response
 end
 p response
 
