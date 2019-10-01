@@ -20,5 +20,5 @@ end
 def find_the_cheese(s)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  puts (s & cheese_types).map{|x| x}.first
+  (s & cheese_types).map{|x| p x}.first
 end
